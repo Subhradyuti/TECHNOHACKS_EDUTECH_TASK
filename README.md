@@ -67,3 +67,77 @@ The predictive models developed in this project can assist in estimating house p
 - Implement the models into a production environment for real-time predictions.
 
 
+# Sentiment Analysis of Tweets
+
+## Author
+Subhradyuti Jana (Data Science Intern)
+
+## Problem Statement
+Perform sentiment analysis on a dataset of tweets to determine the overall sentiment of the posts.
+
+## Table of Contents
+- [Introduction](#introduction)
+- [Dataset](#dataset)
+- [Libraries Used](#libraries-used)
+- [Preprocessing](#preprocessing)
+- [Sentiment Classification](#sentiment-classification)
+- [Visualization](#visualization)
+- [Aspect-Based Sentiment Analysis](#aspect-based-sentiment-analysis)
+- [Reasons for Negative Tweets](#reasons-for-negative-tweets)
+- [Word Cloud of Negative Sentiments](#word-cloud-of-negative-sentiments)
+- [Installation](#installation)
+- [Usage](#usage)
+- [Results](#results)
+- [Contributing](#contributing)
+- [License](#license)
+
+## Introduction
+This project performs sentiment analysis on a dataset of tweets to classify them as positive, negative, or neutral. The analysis includes preprocessing of the text data, sentiment classification, and visualization of the results. Additionally, aspect-based sentiment analysis is conducted to identify specific aspects associated with positive and negative sentiments.
+
+## Dataset
+The dataset used in this project consists of tweets related to various airlines. Each tweet includes information such as tweet text, sentiment, and reasons for negative sentiments.
+
+## Libraries Used
+- pandas
+- nltk
+- re
+- matplotlib
+- seaborn
+- wordcloud
+
+## Preprocessing
+1. Remove noise and irrelevant information (URLs, mentions, hashtags).
+2. Convert text to lowercase.
+3. Tokenize the text into individual words.
+4. Remove stopwords.
+5. Lemmatize the words to their base form.
+
+## Sentiment Classification
+- The `SentimentIntensityAnalyzer` from NLTK is used to compute sentiment scores for each tweet.
+- Tweets are classified as positive, negative, or neutral based on the sentiment score.
+
+## Visualization
+- Bar chart and pie chart visualizations show the distribution and proportions of different sentiment categories.
+- A word cloud visualizes the most common words in negative tweets.
+
+## Aspect-Based Sentiment Analysis
+- Specific aspects (service, price, quality, delivery) are identified in the tweets.
+- Sentiment analysis is performed for each identified aspect to determine the number of positive and negative mentions.
+
+## Reasons for Negative Tweets
+- The reasons for negative tweets are counted and visualized in a bar chart.
+
+## Word Cloud of Negative Sentiments
+- A word cloud is generated to visualize the most common words in negative tweets after removing stopwords and irrelevant text.
+
+## Installation
+To run this project, you need to have Python installed along with the required libraries. You can install the libraries using the following command:
+
+```bash
+pip install pandas nltk matplotlib seaborn wordcloud
+## Usage
+
+Clone this repository:
+
+```bash
+git clone https://github.com/yourusername/sentiment-analysis-tweets.git
